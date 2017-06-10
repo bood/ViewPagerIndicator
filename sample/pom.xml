@@ -43,6 +43,11 @@
 				<groupId>com.simpligility.maven.plugins</groupId>
 				<artifactId>android-maven-plugin</artifactId>
 				<extensions>true</extensions>
+                <configuration>
+                    <androidManifestFile>${project.basedir}/AndroidManifest.xml</androidManifestFile>
+                    <nativeLibrariesDirectory>${project.basedir}/libs</nativeLibrariesDirectory>
+                    <resourceDirectory>${project.basedir}/res</resourceDirectory>
+                </configuration>
 			</plugin>
 
             <plugin>
