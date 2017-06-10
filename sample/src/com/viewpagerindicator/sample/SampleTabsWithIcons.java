@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import com.viewpagerindicator.IconPagerAdapter;
 import com.viewpagerindicator.TabPageIndicator;
+import android.graphics.drawable.Drawable;
 
 public class SampleTabsWithIcons extends FragmentActivity {
     private static final String[] CONTENT = new String[] { "Calendar", "Camera", "Alarms", "Location" };
@@ -49,6 +50,10 @@ public class SampleTabsWithIcons extends FragmentActivity {
 
         @Override public int getIconResId(int index) {
           return ICONS[index];
+        }
+
+        @Override public Drawable getDrawable(int index) {
+          return null;
         }
 
       @Override
