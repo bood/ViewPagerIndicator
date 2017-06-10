@@ -1,5 +1,7 @@
 package com.viewpagerindicator;
 
+import android.graphics.drawable.Drawable;
+
 public interface IconPagerAdapter {
     /**
      * Get icon representing the page at {@code index} in the adapter.
