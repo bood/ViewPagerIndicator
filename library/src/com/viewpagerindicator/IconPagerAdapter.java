@@ -6,6 +6,11 @@ public interface IconPagerAdapter {
      */
     int getIconResId(int index);
 
-    // From PagerAdapter
+  /**
+   * Drawable version, if icon version returns 0.
+   */
+  Drawable getDrawable(int index);
+
+  // From PagerAdapter
     int getCount();
 }
