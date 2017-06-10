@@ -67,7 +67,7 @@
 
         <java.version>1.8</java.version>
         <android.version>4.1.1.4</android.version>
-        <android.platform>25</android.platform>
+        <android.platform>23</android.platform>
         <android.support.version>r7</android.support.version>
 
         <android-maven.version>4.4.3</android-maven.version>
@@ -99,7 +99,7 @@
                     <configuration>
                         <sdk>
                             <platform>${android.platform}</platform>
-                            <buildTools>25.0.3</buildTools>
+                            <buildTools>23.0.3</buildTools>
                         </sdk>
                         <undeployBeforeDeploy>true</undeployBeforeDeploy>
                     </configuration>
