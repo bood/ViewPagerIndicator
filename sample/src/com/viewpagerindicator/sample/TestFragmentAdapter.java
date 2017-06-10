@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import com.viewpagerindicator.IconPagerAdapter;
+import android.graphics.drawable.Drawable;
 
 class TestFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapter {
     protected static final String[] CONTENT = new String[] { "This", "Is", "A", "Test", };
@@ -38,6 +39,11 @@ class TestFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapt
     @Override
     public int getIconResId(int index) {
       return ICONS[index % ICONS.length];
+    }
+
+    @Override
+    public Drawable getDrawable(int index) {
+      return null;
     }
 
     public void setCount(int count) {
